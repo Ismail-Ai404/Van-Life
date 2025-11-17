@@ -72,7 +72,7 @@ node firebaseCheck.mjs
 
 Deployment
 
--    Netlify: [ADD YOUR NETLIFY SITE URL HERE]
+-    Netlify: [https://vanlife007.netlify.app/]
 
 Cleaning up seeded data
 
