@@ -108,6 +108,15 @@ header a:focus-visible,
 	outline-offset: 3px;
 }
 
+header a.active {
+	font-weight: bold;
+	color: #161616;
+}
+
+header a.active::after {
+	transform: scaleX(1);
+}
+
 header button {
 	cursor: pointer;
 }
@@ -547,6 +556,15 @@ i[class*="van-type-"] {
 
 .host-nav a:hover::after,
 .host-nav a:focus::after {
+	transform: scaleX(1);
+}
+
+.host-nav a.active {
+	font-weight: bold;
+	color: #4d4d4d;
+}
+
+.host-nav a.active::after {
 	transform: scaleX(1);
 }
 

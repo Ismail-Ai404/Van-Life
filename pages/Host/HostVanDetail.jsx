@@ -19,12 +19,6 @@ export async function loader({ params, request }) {
 export default function HostVanDetail() {
 	const currentVan = useLoaderData();
 
-	const activeStyles = {
-		fontWeight: "bold",
-		textDecoration: "underline",
-		color: "#161616",
-	};
-
 	return (
 		<section>
 			<Link to=".." relative="path" className="back-button">
@@ -49,24 +43,24 @@ export default function HostVanDetail() {
 					<NavLink
 						to="."
 						end
-						style={({ isActive }) =>
-							isActive ? activeStyles : null
+						className={({ isActive }) =>
+							isActive ? "active" : ""
 						}
 					>
 						Details
 					</NavLink>
 					<NavLink
 						to="pricing"
-						style={({ isActive }) =>
-							isActive ? activeStyles : null
+						className={({ isActive }) =>
+							isActive ? "active" : ""
 						}
 					>
 						Pricing
 					</NavLink>
 					<NavLink
 						to="photos"
-						style={({ isActive }) =>
-							isActive ? activeStyles : null
+						className={({ isActive }) =>
+							isActive ? "active" : ""
 						}
 					>
 						Photos

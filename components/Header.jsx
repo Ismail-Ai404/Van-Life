@@ -5,12 +5,6 @@ import avatar from "../assets/images/avatar-icon.png";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
-	const activeStyles = {
-		fontWeight: "bold",
-		textDecoration: "underline",
-		color: "#161616",
-	};
-
 	function fakeLogOut() {
 		localStorage.removeItem("loggedin");
 	}
@@ -23,24 +17,24 @@ export default function Header() {
 			<nav>
 				<NavLink
 					to="host"
-					style={({ isActive }) =>
-						isActive ? activeStyles : null
+					className={({ isActive }) =>
+						isActive ? "active" : ""
 					}
 				>
 					Host
 				</NavLink>
 				<NavLink
 					to="about"
-					style={({ isActive }) =>
-						isActive ? activeStyles : null
+					className={({ isActive }) =>
+						isActive ? "active" : ""
 					}
 				>
 					About
 				</NavLink>
 				<NavLink
 					to="vans"
-					style={({ isActive }) =>
-						isActive ? activeStyles : null
+					className={({ isActive }) =>
+						isActive ? "active" : ""
 					}
 				>
 					Vans
