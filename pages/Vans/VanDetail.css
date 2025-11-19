@@ -1,0 +1,43 @@
+/** @format */
+
+.rental-date-label {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff; /* Light, clean background */
+	padding: 20px;
+	border-radius: 10px; /* Softer, rounder corners */
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Gentle shadow for depth */
+	max-width: 500px; /* Slightly wider for comfort */
+	font-family: "Arial", sans-serif; /* Casual, modern font */
+	text-align: center; /* Center-aligning everything for a relaxed feel */
+}
+
+.rental-date-label h3 {
+	margin: 0 0 15px 0;
+	font-size: 1.5rem; /* Slightly larger heading for emphasis */
+	color: #333333; /* Rich, but not harsh color */
+	font-weight: 500; /* Slightly bold for a relaxed but clear heading */
+}
+
+/* .rental-date-label .rs-picker-input-group {
+	margin-bottom: 20px; /* Spacious padding between date input and button */
+
+.rental-date-label .link-button {
+	margin-top: 20px;
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #ff7f3f; /* Warm, inviting orange to match the van */
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 8px; /* Rounded button corners for a soft, relaxed look */
+	font-size: 1.1rem; /* Slightly larger text for readability */
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rental-date-label .link-button:hover {
+	background-color: #ff5b00; /* Slightly darker orange for hover */
+	transform: scale(1.05); /* Gentle scaling effect on hover */
+}
