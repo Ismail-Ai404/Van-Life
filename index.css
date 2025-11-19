@@ -475,8 +475,8 @@ i[class*="van-type-"] {
 	text-decoration: none;
 }
 
-.van-detail-container .back-button:visited {
-}
+/* .van-detail-container .back-button:visited {
+} */
 /* removed empty visited rules to avoid linter warnings */
 
 .van-detail-container .back-button span {
