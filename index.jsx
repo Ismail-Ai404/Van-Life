@@ -27,10 +27,20 @@ import HostVanPricing, {
 
 import HostVanPhotos from "./pages/Host/HostVanPhotos";
 import NotFound from "./pages/NotFound";
-import Login, {
+// import Login, {
+// 	loader as loginLoader,
+// 	action as loginAction,
+// } from "./pages/Login";
+import Auth from "./pages/Auth/Auth";
+import {
 	loader as loginLoader,
 	action as loginAction,
-} from "./pages/Login";
+} from "./pages/Auth/SignIn"; // if SignIn handles login
+import {
+	loader as signupLoader,
+	action as signupAction,
+} from "./pages/Auth/SignUp"; // if SignUp handles signup
+
 import Layout from "./components/Layout";
 import HostLayout from "./components/HostLayout";
 import Error from "./components/Error";
@@ -43,12 +53,19 @@ const router = createBrowserRouter(
 		<Route path="/" element={<Layout />}>
 			<Route index element={<Home />} />
 			<Route path="about" element={<About />} />
-			<Route
-				path="login"
-				element={<Login />}
-				loader={loginLoader}
-				action={loginAction}
-			/>
+
+			<Route path="auth" element={<Auth />}>
+				<Route
+					path="login"
+					loader={loginLoader}
+					action={loginAction}
+				/>
+				<Route
+					path="signup"
+					loader={signupLoader}
+					action={signupAction}
+				/>
+			</Route>
 			<Route
 				path="vans"
 				element={<Vans />}
