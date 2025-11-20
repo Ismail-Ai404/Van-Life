@@ -7,6 +7,7 @@ import {
 	collection,
 	getDocs,
 	getDoc,
+	setDoc,
 	doc,
 	query,
 	where,
@@ -87,6 +88,12 @@ export async function getHostVans() {
 // 	const data = await res.json();
 // 	return data.vans;
 // }
+
+// Update van price in Firestore
+export async function updateVanPrice(vanId, newPrice) {
+	const vanRef = doc(db, "vans", vanId);
+	await setDoc(vanRef, { price: Number(newPrice) }, { merge: true });
+}
 
 export async function loginUser(creds) {
 	const res = await fetch("/api/login", {
