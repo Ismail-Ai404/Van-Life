@@ -2,10 +2,6 @@
 
 const mongoose = require("mongoose");
 
-//todo add the review and host model later
-// const Review = require("./review");
-// const Host = require("./host");
-
 //todo add cloudinary later
 // const { cloudinary } = require("../database/cloudinary");
 
